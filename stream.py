@@ -30,4 +30,4 @@ scaled_input = scale.transform(input_data)
 if st.sidebar.button('Predict'):
     # Model Prediction
     prediction = model.predict(scaled_input)
-    st.success(f'Prediction:{prediction}')
+    st.success(f'Prediction:{prediction[0]}')
